@@ -174,7 +174,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://binfunds.com/2023/11/16/how-to-build-a-high-quality-blog-for-free/">
+    <link itemprop="mainEntityOfPage" href="https://binfunds.com/2023/11/16/build-hexo-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -192,7 +192,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/11/16/how-to-build-a-high-quality-blog-for-free/" class="post-title-link" itemprop="url">如何免费搭建高逼格博客</a>
+          <a href="/2023/11/16/build-hexo-blog/" class="post-title-link" itemprop="url">搭建hexo博客</a>
         </h2>
 
         <div class="post-meta-container">
@@ -210,7 +210,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-17 00:23:53" itemprop="dateModified" datetime="2023-11-17T00:23:53+08:00">2023-11-17</time>
+      <time title="修改时间：2023-11-25 22:19:38" itemprop="dateModified" datetime="2023-11-25T22:19:38+08:00">2023-11-25</time>
     </span>
 
   
@@ -223,22 +223,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>本站就是最终呈现效果，是否逼格满满，你是否也想拥，按如下步骤就能免费得到。</p>
-<p>1、安装node.js<br>2、注册一个github账号，并且在本地电脑安装git工具<br>3、安装vscode编辑器（就是文本编辑器）<br>4、安装hexo<br>4.1、执行命令：npm install -g hexo-cli<br>4.2、新建一个hexo-xxx-blog目录，先执行命令hexo init，然后再执行hexo s，然后访问<a href="http://localhost:4000，就能看到网站效果">http://localhost:4000，就能看到网站效果</a><br>4.3、网站比较原始，需要弄一个皮肤，执行命令git clone <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next.git">https://github.com/next-theme/hexo-theme-next.git</a> themes&#x2F;next<br>4.4、找到页面_config.yml，把theme: landscape修改为theme: next<br>4.5、依次执行如下命令，最新的效果就可以看到了<br>hexo clean &#x2F;&#x2F; 清理目录<br>hexo g &#x2F;&#x2F; 生成博客目录<br>hexo s &#x2F;&#x2F; 本地预览</p>
-<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <h3 id="1、安装hexo"><a href="#1、安装hexo" class="headerlink" title="1、安装hexo"></a>1、安装hexo</h3><p>按顺序执行如下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli       <span class="comment"># 安装hexo</span></span><br><span class="line">hexo init                     <span class="comment"># 初始化一个博客</span></span><br><span class="line">hexo s                        <span class="comment"># 预览</span></span><br></pre></td></tr></table></figure>
+<p>访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> ，就能看到网站效果</p>
+<h3 id="2、更换主题"><a href="#2、更换主题" class="headerlink" title="2、更换主题"></a>2、更换主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>找到页面_config.yml，把theme: landscape修改为theme: next<br>然后就能看到新的效果了</p>
+<h3 id="3、新建文章"><a href="#3、新建文章" class="headerlink" title="3、新建文章"></a>3、新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span>        <span class="comment"># 新建文章</span></span><br><span class="line">hexo clean                    <span class="comment"># 执行此命令后继续下一条</span></span><br><span class="line">hexo g                        <span class="comment"># 生成博客目录</span></span><br><span class="line">hexo s                        <span class="comment"># 本地预览</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h3 id="4、部署到git"><a href="#4、部署到git" class="headerlink" title="4、部署到git"></a>4、部署到git</h3><p>找到页面_config.yml，划到页面最后，把xxx修改为自己的git地址</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/xxx/xxx.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<p>部署命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d                        <span class="comment"># 部署项目</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
