@@ -51,6 +51,15 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?874979f959293ee20428db0c75e8b408";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -210,7 +219,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-25 22:19:38" itemprop="dateModified" datetime="2023-11-25T22:19:38+08:00">2023-11-25</time>
+      <time title="修改时间：2023-11-25 22:30:01" itemprop="dateModified" datetime="2023-11-25T22:30:01+08:00">2023-11-25</time>
     </span>
 
   
@@ -223,15 +232,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="1、安装hexo"><a href="#1、安装hexo" class="headerlink" title="1、安装hexo"></a>1、安装hexo</h3><p>按顺序执行如下命令</p>
+          <h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>按顺序执行如下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli       <span class="comment"># 安装hexo</span></span><br><span class="line">hexo init                     <span class="comment"># 初始化一个博客</span></span><br><span class="line">hexo s                        <span class="comment"># 预览</span></span><br></pre></td></tr></table></figure>
 <p>访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> ，就能看到网站效果</p>
-<h3 id="2、更换主题"><a href="#2、更换主题" class="headerlink" title="2、更换主题"></a>2、更换主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
 
 <p>找到页面_config.yml，把theme: landscape修改为theme: next<br>然后就能看到新的效果了</p>
-<h3 id="3、新建文章"><a href="#3、新建文章" class="headerlink" title="3、新建文章"></a>3、新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span>        <span class="comment"># 新建文章</span></span><br><span class="line">hexo clean                    <span class="comment"># 执行此命令后继续下一条</span></span><br><span class="line">hexo g                        <span class="comment"># 生成博客目录</span></span><br><span class="line">hexo s                        <span class="comment"># 本地预览</span></span><br></pre></td></tr></table></figure>
+<h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span>        <span class="comment"># 新建文章</span></span><br><span class="line">hexo clean                    <span class="comment"># 执行此命令后继续下一条</span></span><br><span class="line">hexo g                        <span class="comment"># 生成博客目录</span></span><br><span class="line">hexo s                        <span class="comment"># 本地预览</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="4、部署到git"><a href="#4、部署到git" class="headerlink" title="4、部署到git"></a>4、部署到git</h3><p>找到页面_config.yml，划到页面最后，把xxx修改为自己的git地址</p>
+<h3 id="部署到git"><a href="#部署到git" class="headerlink" title="部署到git"></a>部署到git</h3><p>找到页面_config.yml，划到页面最后，把xxx修改为自己的git地址</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/xxx/xxx.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 <p>部署命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d                        <span class="comment"># 部署项目</span></span><br></pre></td></tr></table></figure>
